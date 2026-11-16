@@ -1,0 +1,6 @@
+@echo off
+set REPO=%USERPROFILE%\.m2\repository
+set CP=%REPO%\org\glassfish\corba\exception-annotation-processor\4.2.5\exception-annotation-processor-4.2.5.jar;%REPO%\org\glassfish\corba\glassfish-corba-csiv2-idl\4.2.5\glassfish-corba-csiv2-idl-4.2.5.jar;%REPO%\org\glassfish\corba\glassfish-corba-internal-api\4.2.5\glassfish-corba-internal-api-4.2.5.jar;%REPO%\org\glassfish\corba\glassfish-corba-omgapi\4.2.5\glassfish-corba-omgapi-4.2.5.jar;%REPO%\org\glassfish\corba\glassfish-corba-orb\4.2.5\glassfish-corba-orb-4.2.5.jar;%REPO%\org\glassfish\pfl\pfl-basic\4.1.2\pfl-basic-4.1.2.jar;%REPO%\org\glassfish\pfl\pfl-basic-tools\4.1.2\pfl-basic-tools-4.1.2.jar;%REPO%\org\glassfish\pfl\pfl-dynamic\4.1.2\pfl-dynamic-4.1.2.jar;%REPO%\org\glassfish\pfl\pfl-tf\4.1.2\pfl-tf-4.1.2.jar;%REPO%\org\glassfish\pfl\pfl-tf-tools\4.1.2\pfl-tf-tools-4.1.2.jar;%REPO%\org\glassfish\gmbal\gmbal\4.0.3\gmbal-4.0.3.jar;%REPO%\org\glassfish\external\management-api\3.2.3\management-api-3.2.3.jar;target\classes
+
+java -cp "%CP%" --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED StudentServer
+pause

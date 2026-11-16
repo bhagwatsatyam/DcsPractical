@@ -1,0 +1,21 @@
+# Compiled class files
+*.class
+
+# Maven build directories
+target/
+
+# Dependency directories
+.mvn/wrapper/
+
+# Log files
+*.log
+
+# Runtime temporary reference files
+student.ref
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
